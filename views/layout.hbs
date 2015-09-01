@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>doeg</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+    <script src="js/cursor.js" type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="tldr">
+        <h1>hello</h1>
+        <h3 class="link name"><a href="/">i'm doeg</a></h3>
+        <div class="about">
+          plant/puppy elemental. engineer at
+          <a class="link" href="https://plot.ly" target="_blank">plotly</a>, previously at
+          <a class="link" href="https://twitter.com" target="_blank">twitter</a>. i like to draw.
+        </div>
+
+        <ul class="links">
+          {{# nav_links }}
+            <li>
+              <a class="nav link" href="{{href}}">{{label}}</a>
+            </li>
+          {{/ nav_links}}
+        </ul>
+      </div>
+      <div class="content">
+        {{{ content }}}
+      </div>
+    </div>
+  </body>
+</html>
