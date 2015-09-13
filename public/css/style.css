@@ -92,10 +92,6 @@ a.link:hover:after {
   width: 60px;
 }
 
-body {
-  overflow: hidden;
-}
-
 h2 {
   font-size: 0.9rem;
   margin-top: 20px;
@@ -108,13 +104,13 @@ h2 {
 
 .name a,
 .name a:visited {
-    color: #333;
-    text-decoration: none;
-    transition: color 0.2s ease;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .name a:hover {
-    color: #45B504;
+  color: #45B504;
 }
 
 .padding-soft-v {
