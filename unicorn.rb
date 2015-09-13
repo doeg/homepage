@@ -5,6 +5,8 @@
 worker_processes 2
 working_directory @dir
 
+user "www-data", "www-data"
+
 timeout 30
 
 # Specify path to socket unicorn listens to,
