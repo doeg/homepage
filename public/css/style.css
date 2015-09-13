@@ -15,6 +15,15 @@ body h1 {
   font-size: 1.8em;
 }
 
+.hello a.link {
+  color: #333;
+  transition: color 0.2s ease;
+}
+
+.hello a.link:hover {
+  color: #0CC459;
+}
+
 .about {
   font-size: 0.85em;
   color: #999;

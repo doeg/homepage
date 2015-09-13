@@ -7,19 +7,27 @@ class MyApp < Sinatra::Base
 
   NAV = [
     { label: 'projects', href: '/projects' },
-    { label: 'drawings', href: 'http://doeggy.tumblr.com' },
+    { label: 'drawings', href: 'http://doeggy.tumblr.com', new_tab: true },
     { label: 'contact',  href: '/contact' }
   ].freeze
 
   get '/' do
-    handlebars :index, locals: { nav_links: NAV }
+    handlebars :index, locals: { 
+      nav_links: NAV 
+    }
   end
 
   get '/projects' do
-    handlebars :projects, locals: { nav_links: NAV }
+    handlebars :projects, locals: { 
+      nav_links: NAV,
+      title: "projects"
+    }
   end
 
   get '/contact' do
-    handlebars :contact, locals: { nav_links: NAV }
+    handlebars :contact, locals: { 
+      nav_links: NAV,
+      title: "contact"
+    }
   end
 end

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>doeg</title>
+    <title>doeg {{# title}}| {{.}}{{/ title}}</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/pocketgrid.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -12,9 +12,12 @@
 
   <body>
     <div class="container">
-    
       <div class="tldr">
-        <h1>hello</h1>
+        
+        <h1 class="hello">
+          <a href="/" class="link">hello</a>
+        </h1>
+
         <h3 class="link name"><a href="/">i'm doeg</a></h3>
         <div class="about">
           plant/puppy elemental. engineer at
@@ -25,7 +28,9 @@
         <ul class="links">
           {{# nav_links }}
             <li>
-              <a class="nav link" href="{{href}}">{{label}}</a>
+              <a class="nav link" href="{{href}}" {{# new_tab}}target="_blank"{{/ new_tab}}>
+                {{label}}
+              </a>
             </li>
           {{/ nav_links}}
         </ul>
