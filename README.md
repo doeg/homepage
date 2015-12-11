@@ -2,4 +2,8 @@
     rerun rackup
     
 #### Production server
-http://recipes.sinatrarb.com/p/deployment/nginx_proxied_to_unicorn
+The service should start automatically. However, it can be started manually (as root):
+
+```
+service unicorn start
+```
