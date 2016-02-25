@@ -1,4 +1,5 @@
 const path = require('path');
+const StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin');
 
 module.exports = {
   entry: './src/entry.js',
@@ -25,5 +26,18 @@ module.exports = {
         exclude: /node_modules/
       },
     ]
+  },
+
+  plugins: [
+    /*
+     * Provide a series of paths to be rendered, and a matching set of index.html
+     * files will be rendered in your output directory by executing your own
+     * custom, webpack-compiled render function defined in the entry file.
+     */
+    new StaticSiteGeneratorPlugin('bundle.js', ['/'], {})
+  ],
+
+  resolve: {
+    extensions: ['', '.jsx', '.js', '.json', '.svg', '.png', '.jpg']
   }
 };
