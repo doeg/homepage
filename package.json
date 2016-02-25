@@ -4,7 +4,12 @@
   "description": "welcome 2 the dog zone",
   "main": "server.js",
   "scripts": {
-    "test": "echo 'no testz yet' && exit 0"
+    "build": "webpack --progress --colors",
+    "build:watch": "npm run clean && webpack --progress --watch --colors",
+    "clean": "rimraf dist",
+    "dev": "webpack-dev-server --content-base build/ --progress --colors --port 8420",
+    "start": "npm run dev",
+    "test": "npm run build"
   },
   "repository": {
     "type": "git",
