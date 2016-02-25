@@ -1,0 +1,19 @@
+{
+  "name": "doeg-zone",
+  "version": "2.0.0",
+  "description": "welcome 2 the dog zone",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo 'no testz yet' && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doeg/homepage.git"
+  },
+  "author": "@doeg",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/doeg/homepage/issues"
+  },
+  "homepage": "https://github.com/doeg/homepage#readme"
+}
