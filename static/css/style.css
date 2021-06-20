@@ -60,7 +60,7 @@ p {
 .outer {
 	margin: 0 auto;
 	max-width: 640px;
-	padding: 20vh 0;
+	padding: 20vh 0 48px 0;
 	width: 80vw;
 }
 
