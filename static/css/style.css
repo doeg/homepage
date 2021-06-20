@@ -1,0 +1,69 @@
+:root {
+	--colorTextStrong: #242424;
+	--colorText: #696969;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%; /* 1rem == 10px */
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: var(--colorText);
+	font-family: "Nunito", sans-serif;
+	font-size: 1.6rem;
+	font-weight: 300;
+	height: 100vh;
+	line-height: 1.6;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+	width: 100vw;
+}
+
+main {
+	height: 100%;
+	position: relative;
+	overflow: auto;
+	width: 100%;
+}
+
+h1 {
+	color: var(--colorTextStrong);
+	font-size: 3.6rem;
+	font-weight: 800;
+}
+
+a,
+a:active,
+a:focus,
+a:visited {
+	color: var(--colorTextStrong);
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+p {
+	margin: 1.2rem 0;
+}
+
+.outer {
+	margin: 0 auto;
+	max-width: 640px;
+	padding: 20vh 0;
+	width: 80vw;
+}
+
+.inner {
+	margin-left: 36px;
+}
